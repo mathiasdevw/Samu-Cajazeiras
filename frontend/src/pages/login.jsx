@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/login.css';
+import '../styles/Login.css';
 
 const NUM_EMOJIS = 15;
 
