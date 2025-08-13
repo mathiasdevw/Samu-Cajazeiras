@@ -47,8 +47,7 @@ export default function Login() {
         <div className="logo">
           <h1>SAMU</h1>
           <h2>Cajazeiras</h2>
-        </div>
-        
+        </div>        
         <form onSubmit={handleSubmit}>
           <input 
             type="text" 

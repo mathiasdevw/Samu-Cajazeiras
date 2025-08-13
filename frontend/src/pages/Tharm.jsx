@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import '../styles/Modulo_Tharm.css';
+import '../styles/Tharm.css';
 
-export default function Modulo_Tharm(){
+export default function Tharm(){
 
     <html lang="en">
     <head>
