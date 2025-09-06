@@ -1,8 +1,40 @@
-.teste h2 {
-  font-size: 3.5rem;
-  font-weight: 900;
-  margin: 0;
-  letter-spacing: 0.1em;
-  text-shadow: 3px 3px 0 rgba(97, 218, 251, 0.6);
+.head {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  border: #f9f3f3;
+  box-sizing: border-box;
 }
 
+.janela {
+  position: absolute;
+  width: 850px;
+  height: 700px;
+  right: 600px;
+  background-color: rgb(187, 183, 183);
+  border: 1px solid #f9f3f3;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(240, 5, 5, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+}
+
+.solicitante{
+  width: 400px;
+  height: 30px;
+  background-origin: padding-box;
+    border-radius: 5px;
+    background-color: #f9f3f3;
+}
+
+.paciente{
+  width: 500px;
+  height: 30px;
+  background-color: #f9f3f3;
+}
+
+.idade{
+  width: 60px;
+  height: auto;
+}

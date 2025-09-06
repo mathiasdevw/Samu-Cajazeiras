@@ -1,10 +1,12 @@
 const express = require('express');
-const usuariosRoutes = require('./routes/usuarios');
+const cors = require('cors'); // 🚨 importa cors
+const usuariosRoutes = require('./routes/usuariosRoutes');
 
 const app = express();
+
+app.use(cors()); // 🚨 habilita CORS
 app.use(express.json());
 
-// Registra as rotas do usuário em /usuarios
 app.use('/usuarios', usuariosRoutes);
 
 const PORT = 3000;

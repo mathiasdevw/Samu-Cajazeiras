@@ -19,7 +19,10 @@ CREATE TABLE ambulancias (
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
+
 -- TABELA: tabela_listagem
+
 CREATE TABLE tabela_listagem (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     categoria TEXT NOT NULL,

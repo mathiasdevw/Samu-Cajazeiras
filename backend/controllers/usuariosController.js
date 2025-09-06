@@ -27,6 +27,7 @@ exports.criarUsuario = (req, res) => {
   });
 };
 
+// 🔑 Função de login
 exports.autenticarUsuario = (req, res) => {
   const { login, senha } = req.body;
 
@@ -43,13 +44,15 @@ exports.autenticarUsuario = (req, res) => {
     }
 
     if (!row) {
-      // Usuário não encontrado ou senha incorreta
       return res.status(401).json({ error: 'Login ou senha inválidos.' });
     }
 
-    // Sucesso: retorna dados do usuário (pode remover senha antes)
-    const { senha, ...usuarioSemSenha } = row;
-    res.json({ message: 'Autenticado com sucesso!', usuario: usuarioSemSenha });
+    // remove senha antes de mandar de volta
+    const { senha: _, ...usuarioSemSenha } = row;
+
+    res.json({
+      message: 'Autenticado com sucesso!',
+      usuario: usuarioSemSenha
+    });
   });
 };
-

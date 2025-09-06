@@ -1,17 +1,31 @@
-import { Link } from 'react-router-dom';
 import '../styles/Tharm.css';
+import { useState } from 'react';
 
-export default function Tharm(){
 
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <div><h2 className='teste'>oiiiiiiiiiiiiiiiiiiiiiiiiiii</h2></div>
-    <body>
-        
-    </body>
-    </html>
+export default function Tharm() {
+      const [age, setAge] = useState(50);
+    return (
+        <div className='Tharm'> 
+         <div className='janela'>
+        <h3 className='head' type="text">Modulo Tharm</h3>
+        <input className='solicitante'       
+        type="text"
+        placeholder="Solicitante">
+        </input>
+        <input className='paciente' type='text' placeholder='Paciente'></input>
+    <div>
+      <input
+        type="number"
+        min="0"
+        max="120"
+        step="1"
+        value={age}
+        onChange={(e) => setAge(e.target.value)}
+        className='idade'
+      />
+      <p>Idade selecionada: {age}</p>
+    </div>
+             </div>    
+    </div>
+    );
 }
